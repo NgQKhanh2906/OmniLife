@@ -1,0 +1,80 @@
+# ==========================================
+# 1. ENVIRONMENT & SECRETS (CRITICAL)
+# ==========================================
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+*.pem
+*.key
+application-secret.yml
+
+# ==========================================
+# 2. BACKEND (JAVA 21 / SPRING BOOT / MAVEN)
+# ==========================================
+backend/target/
+target/
+backend/.mvn/timing.properties
+backend/.mvn/wrapper/maven-wrapper.jar
+*.class
+*.log
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# ==========================================
+# 3. FRONTEND (NEXT.JS 14 / NODE.JS)
+# ==========================================
+frontend/node_modules/
+node_modules/
+frontend/.next/
+.next/
+frontend/out/
+out/
+frontend/build/
+build/
+frontend/coverage/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.tsbuildinfo
+next-env.d.ts
+
+# ==========================================
+# 4. MYSQL WORKBENCH & LOCAL DATA
+# ==========================================
+database/*.mwb.bak
+database/*.mwb.beforefix
+mysql-data/
+uploads/
+
+# ==========================================
+# 5. IDEs & OS FILES
+# ==========================================
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 6. EXPLICITLY KEEP DOCS & GITKEEP
+# ==========================================
+!docs/
+!docs/**
+!**/.gitkeep
